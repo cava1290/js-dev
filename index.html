@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çalışan Yönetim Uygulaması</title>
+</head>
+<body>
+    <h1>Çalışan Yönetim Uygulaması</h1>
+
+    <h2>Çalışan Ekleme</h2>
+    <input type="text" id="isim" placeholder="İsim">
+    <input type="number" id="yas" placeholder="Yaş">
+    <input type="text" id="departman" placeholder="Departman">
+    <input type="number" id="maas" placeholder="Maaş">
+    <button onclick="calisanEkle()">Çalışan Ekle</button>
+    <p id="eklemeSonucu"></p>
+
+    <h2>Çalışan Güncelleme</h2>
+    <input type="text" id="guncelleIsim" placeholder="İsim">
+    <input type="number" id="yeniYas" placeholder="Yeni Yaş">
+    <input type="text" id="yeniDepartman" placeholder="Yeni Departman">
+    <input type="number" id="yeniMaas" placeholder="Yeni Maaş">
+    <button onclick="calisanGuncelle()">Çalışan Güncelle</button>
+    <p id="guncelleSonucu"></p>
+
+    <h2>Çalışan Silme</h2>
+    <input type="text" id="silIsim" placeholder="İsim">
+    <button onclick="calisanSil()">Çalışan Sil</button>
+    <p id="silmeSonucu"></p>
+
+    <h2>Çalışan Listeleme</h2>
+    <button onclick="tumCalisanlariListele()">Tüm Çalışanları Listele</button>
+    <input type="text" id="departmanFiltre" placeholder="Departmana Göre Listele">
+    <button onclick="departmanaGoreListele()">Listele</button>
+    <button onclick="maasaGoreSirala(true)">Maaşa Göre Artan Sıralama</button>
+    <button onclick="maasaGoreSirala(false)">Maaşa Göre Azalan Sıralama</button>
+    <button onclick="maasFiltresi(5000)">Maaşı 5000'in Altında Olanlar</button>
+    <p id="listeSonucu"></p>
+
+    <h2>En Yüksek Maaşlı Çalışan</h2>
+    <button onclick="enYuksekMaas()">En Yüksek Maaşlı Çalışanı Bul</button>
+    <p id="yuksekMaasSonucu"></p>
+
+    <h2>Toplam Maaş Hesaplama</h2>
+    <button onclick="toplamMaas()">Tüm Çalışanların Toplam Maaşı</button>
+    <input type="text" id="maliyetDepartman" placeholder="Departmana Göre Maliyet Hesapla">
+    <button onclick="departmanMaliyeti()">Hesapla</button>
+    <p id="toplamMaasSonucu"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
